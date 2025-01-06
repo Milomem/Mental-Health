@@ -1,0 +1,11 @@
+pycaret
+pandas
+numpy
+matplotlib
+seaborn
+plotly
+squarify
+category_encoders
+scikit-learn==1.2.2
+gradio
+kaleido
