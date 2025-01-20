@@ -13,3 +13,4 @@ kaleido
 wandb
 IPython
 IPython.display
+black
