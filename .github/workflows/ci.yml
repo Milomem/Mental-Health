@@ -1,4 +1,5 @@
 name: Continuous Integration
+
 on:
   push:
     branches: [ "main" ]
@@ -7,14 +8,15 @@ on:
   workflow_dispatch:
   
 permissions: write-all
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: iterative/setup-cml@v2
-      with:
-        python-version: '3.9'  # Specify a version compatible with your package
+        with:
+          python-version: '3.9'  # Specify a version compatible with your package
       - name: Install Packages
         run: make install
       - name: Format
